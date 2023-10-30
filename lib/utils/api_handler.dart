@@ -13,8 +13,6 @@ class Fetcher {
     Map<String, dynamic>? payloads,
   }) async {
     var url = Uri.parse('$apiURL$path');
-
-    print(url);
     try {
       http.Response response;
       if (method == Method.get) {
